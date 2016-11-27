@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Qipu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <header>
+            <h3>Declaração Anual</h3>
+            <div class="row">
+                <div class="col s6">2014</div>
+                <div class="col s6">2015</div>
+            </div>
+        </header>
+        <main class="main">
+            <!--Primeira tabela-->
+            <table>
+                <thead>
+                    <tr>
+                        <th data-field="id" colspan="2">Receita Bruta Anual<br>Revenda de Mercadorias (Comércio)</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="colunas">Revenda de Mercadorias com dispensa de emissão de documento fiscal</td>
+                        <td class="colunas"><span class="dollar">0,00</span></td>
+                    </tr>
+                    <tr>
+                        <td class="colunas">Revenda de Mercadorias com documento fiscal emitido</td>
+                        <td class="colunas"><span class="dollar">660,00</span></td>
+                    </tr>
+                    <tr>
+                        <td class="colunas">Total das Receitas com Revenda de Mercadorias</td>
+                        <td class="colunas"><span class="dollar">660,00</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--Segunda tabela-->
+            <table>
+                <thead>
+                    <tr>
+                        <th data-field="id" colspan="2">Receita Bruta Anual<br>Venda de Produtos Industrializados (Indústria)</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="colunas">Venda de produtos industrializados com dispensa de emissão de documento fiscal</td>
+                        <td class="colunas"><span class="dollar">0,00</span></td>
+                    </tr>
+                    <tr>
+                        <td class="colunas">Venda de produtos industrializados com documento fiscal emitido</td>
+                        <td class="colunas"><span class="dollar">0,00</span></td>
+                    </tr>
+                    <tr>
+                        <td class="colunas">Total das Receitas com Venda de Produtos Industrializados</td>
+                        <td class="colunas"><span class="dollar">0,00</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <!--Terceira tabela-->
+            <table>
+                <thead>
+                    <tr>
+                        <th data-field="id" colspan="2">Receita Bruta Anual<br>Venda de Produtos Artesanais (Livre)</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="colunas">Venda de produtos artesanais com dispensa de emissão de documento fiscal</td>
+                        <td class="colunas"><span class="dollar">0,00</span></td>
+                    </tr>
+                    <tr>
+                        <td class="colunas">Venda de produtos artesanais com documento fiscal emitido</td>
+                        <td class="colunas"><span class="dollar">0,00</span></td>
+                    </tr>
+                    <tr>
+                        <td class="colunas">Total das Receitas com Venda de Produtos Artesanais</td>
+                        <td class="colunas"><span class="dollar">0,00</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <footer>
+            <div class="row">
+                <div class="col s6">Total de Receitas Brutas no Ano</div>
+                <div class="col s6" id="total"><span class="dollar">660,00</span></div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
