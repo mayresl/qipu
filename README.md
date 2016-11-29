@@ -5,5 +5,5 @@ Qipu - Exercício 2
 - [x] Header
 - [x] Main
 - [x] Footer
-- [ ] Tabs
-- [ ] Padronização
+- [x] Tabs
+- [x] Padronização

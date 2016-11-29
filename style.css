@@ -1,4 +1,61 @@
-table {
+h4{
+    font-family: Helvetica;
+    font-size: 5vh;
+}
+
+th {
+    width: 100%;
+    text-align: center;
+    background-color: #eeeeee;
+    border-bottom: #eeeeee solid 1px;
+}
+
+td {
+    border-bottom: #eeeeee solid 1px;
+}
+
+tbody>tr:nth-child(3) {
+    background-color: #eeeeee;
+}
+
+footer {
+    width: 100%;
+    height: 10vh;
+    background-color:#3acf79;
+    color:white;
+    bottom: 0;
+    position: fixed;
+    line-height: 10vh;
+}
+
+.header{
+    width: 100%;
+    background-color:#5871f2;
+    color:white;
+    top: 0;
+    position: fixed;
+    height: 20vh;
+}
+
+.main{
+    overflow:auto;
+    margin-top: 20vh;
+    height: 70vh;
+    padding: 3vw 3vw;
+}
+
+.voltar{
+    font-size: 5vh !important;  
+    margin: 0 4vw;
+    line-height: 10vh;
+    vertical-align: sub;
+}
+
+.colunas {
+    width: 50%;
+}
+
+.table {
     margin-bottom: 1em;
     border: #eeeeee solid 1px;
     -webkit-border-radius: 5px;
@@ -8,19 +65,44 @@ table {
     color: darkgray;
 }
 
-th {
-    width: 100%;
-    text-align: center;
-    background-color: #eeeeee;
-    border-bottom: #eeeeee solid 1px
+.title{
+    height: 10vh;
+    margin: 0;
+    line-height: 10vh;
 }
 
-.colunas {
-    width: 50%;
+.dollar:before {
+    content: 'R$';
+    font-size: 7pt;
+    vertical-align: top;
 }
 
-td {
-    border-bottom: #eeeeee solid 1px
+.tabs {    
+    background-color: transparent;
+    overflow: hidden;
+    height: 100%;
+}
+
+.tabs .indicator {
+    background-color: #3acf79;
+    height: 0.3vh;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+    background-color: transparent;
+    color: white;
+}
+
+.tabs .tab a {
+    color: #8A9CF6;
+    font-family: Helvetica;
+    font-size: 5vh;
+    font-weight: 600;
+    line-height: 10vh;
+}
+
+.tabs .tab{
+    height: initial;
 }
 
 td.colunas:nth-child(2){
@@ -31,40 +113,4 @@ td.colunas:nth-child(2){
 #total{
     text-align: right;
     color: white;
-}
-
-.dollar:before {
-    content: 'R$';
-    font-size: 7pt;
-    vertical-align: top;
-}
-
-tbody>tr:nth-child(3) {
-    background-color: #eeeeee;
-}
-
-header{
-    width: 100%;
-    background-color:#5871f2;
-    color:white;
-    top: 0;
-    position: fixed;
-    height: 20vh;
-}
-
-footer{
-    width: 100%;
-    height: 10vh;
-    background-color:#3acf79;
-    color:white;
-    bottom: 0;
-    position: fixed;
-    line-height: 10vh;
-}
-
-.main{
-    overflow:auto;
-    margin-top: 20vh;
-    height: 70vh;
-    padding: 3vw 3vw;
 }

@@ -3,93 +3,170 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Qipu</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <title>Qipu</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <link rel="stylesheet" href="style.css">    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.js"></script>
 </head>
 
 <body>
     <div>
-        <header>
-            <h3>Declaração Anual</h3>
-            <div class="row">
-                <div class="col s6">2014</div>
-                <div class="col s6">2015</div>
+        <header class="header">
+            <h4 class="title"><i class="material-icons voltar">arrow_back</i>Declaração Anual</h4>
+            <div class="row title">
+                <ul class="tabs">
+                    <li class="tab col s6" ><a href="#table2" >2014</a></li>
+                    <li class="tab col s6" ><a class="active" href="#table1" >2015</a></li>
+                </ul>
             </div>
         </header>
         <main class="main">
-            <!--Primeira tabela-->
-            <table>
-                <thead>
-                    <tr>
-                        <th data-field="id" colspan="2">Receita Bruta Anual<br>Revenda de Mercadorias (Comércio)</th>
-                    </tr>
-                </thead>
+            <div id="table1" class="col s12">
+                <!--Primeira tabela-->
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th data-field="id" colspan="2">Receita Bruta Anual<br>Revenda de Mercadorias (Comércio)</th>
+                        </tr>
+                    </thead>
 
-                <tbody>
-                    <tr>
-                        <td class="colunas">Revenda de Mercadorias com dispensa de emissão de documento fiscal</td>
-                        <td class="colunas"><span class="dollar">0,00</span></td>
-                    </tr>
-                    <tr>
-                        <td class="colunas">Revenda de Mercadorias com documento fiscal emitido</td>
-                        <td class="colunas"><span class="dollar">660,00</span></td>
-                    </tr>
-                    <tr>
-                        <td class="colunas">Total das Receitas com Revenda de Mercadorias</td>
-                        <td class="colunas"><span class="dollar">660,00</span></td>
-                    </tr>
-                </tbody>
-            </table>
-            <!--Segunda tabela-->
-            <table>
-                <thead>
-                    <tr>
-                        <th data-field="id" colspan="2">Receita Bruta Anual<br>Venda de Produtos Industrializados (Indústria)</th>
-                    </tr>
-                </thead>
+                    <tbody>
+                        <tr>
+                            <td class="colunas">Revenda de Mercadorias com dispensa de emissão de documento fiscal</td>
+                            <td class="colunas"><span class="dollar">0,00</span></td>
+                        </tr>
+                        <tr>
+                            <td class="colunas">Revenda de Mercadorias com documento fiscal emitido</td>
+                            <td class="colunas"><span class="dollar">660,00</span></td>
+                        </tr>
+                        <tr>
+                            <td class="colunas">Total das Receitas com Revenda de Mercadorias</td>
+                            <td class="colunas"><span class="dollar">660,00</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!--Segunda tabela-->
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th data-field="id" colspan="2">Receita Bruta Anual<br>Venda de Produtos Industrializados (Indústria)</th>
+                        </tr>
+                    </thead>
 
-                <tbody>
-                    <tr>
-                        <td class="colunas">Venda de produtos industrializados com dispensa de emissão de documento fiscal</td>
-                        <td class="colunas"><span class="dollar">0,00</span></td>
-                    </tr>
-                    <tr>
-                        <td class="colunas">Venda de produtos industrializados com documento fiscal emitido</td>
-                        <td class="colunas"><span class="dollar">0,00</span></td>
-                    </tr>
-                    <tr>
-                        <td class="colunas">Total das Receitas com Venda de Produtos Industrializados</td>
-                        <td class="colunas"><span class="dollar">0,00</span></td>
-                    </tr>
-                </tbody>
-            </table>
-            <!--Terceira tabela-->
-            <table>
-                <thead>
-                    <tr>
-                        <th data-field="id" colspan="2">Receita Bruta Anual<br>Venda de Produtos Artesanais (Livre)</th>
-                    </tr>
-                </thead>
+                    <tbody>
+                        <tr>
+                            <td class="colunas">Venda de produtos industrializados com dispensa de emissão de documento fiscal</td>
+                            <td class="colunas"><span class="dollar">0,00</span></td>
+                        </tr>
+                        <tr>
+                            <td class="colunas">Venda de produtos industrializados com documento fiscal emitido</td>
+                            <td class="colunas"><span class="dollar">0,00</span></td>
+                        </tr>
+                        <tr>
+                            <td class="colunas">Total das Receitas com Venda de Produtos Industrializados</td>
+                            <td class="colunas"><span class="dollar">0,00</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!--Terceira tabela-->
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th data-field="id" colspan="2">Receita Bruta Anual<br>Venda de Produtos Artesanais (Livre)</th>
+                        </tr>
+                    </thead>
 
-                <tbody>
-                    <tr>
-                        <td class="colunas">Venda de produtos artesanais com dispensa de emissão de documento fiscal</td>
-                        <td class="colunas"><span class="dollar">0,00</span></td>
-                    </tr>
-                    <tr>
-                        <td class="colunas">Venda de produtos artesanais com documento fiscal emitido</td>
-                        <td class="colunas"><span class="dollar">0,00</span></td>
-                    </tr>
-                    <tr>
-                        <td class="colunas">Total das Receitas com Venda de Produtos Artesanais</td>
-                        <td class="colunas"><span class="dollar">0,00</span></td>
-                    </tr>
-                </tbody>
-            </table>
+                    <tbody>
+                        <tr>
+                            <td class="colunas">Venda de produtos artesanais com dispensa de emissão de documento fiscal</td>
+                            <td class="colunas"><span class="dollar">0,00</span></td>
+                        </tr>
+                        <tr>
+                            <td class="colunas">Venda de produtos artesanais com documento fiscal emitido</td>
+                            <td class="colunas"><span class="dollar">0,00</span></td>
+                        </tr>
+                        <tr>
+                            <td class="colunas">Total das Receitas com Venda de Produtos Artesanais</td>
+                            <td class="colunas"><span class="dollar">0,00</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="table2" class="col s12">
+                <!--Primeira tabela-->
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th data-field="id" colspan="2">Receita Bruta Anual<br>Revenda de Mercadorias (Comércio)</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td class="colunas">Revenda de Mercadorias com dispensa de emissão de documento fiscal</td>
+                            <td class="colunas"><span class="dollar">100,00</span></td>
+                        </tr>
+                        <tr>
+                            <td class="colunas">Revenda de Mercadorias com documento fiscal emitido</td>
+                            <td class="colunas"><span class="dollar">700,00</span></td>
+                        </tr>
+                        <tr>
+                            <td class="colunas">Total das Receitas com Revenda de Mercadorias</td>
+                            <td class="colunas"><span class="dollar">800,00</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!--Segunda tabela-->
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th data-field="id" colspan="2">Receita Bruta Anual<br>Venda de Produtos Industrializados (Indústria)</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td class="colunas">Venda de produtos industrializados com dispensa de emissão de documento fiscal</td>
+                            <td class="colunas"><span class="dollar">0,00</span></td>
+                        </tr>
+                        <tr>
+                            <td class="colunas">Venda de produtos industrializados com documento fiscal emitido</td>
+                            <td class="colunas"><span class="dollar">200,00</span></td>
+                        </tr>
+                        <tr>
+                            <td class="colunas">Total das Receitas com Venda de Produtos Industrializados</td>
+                            <td class="colunas"><span class="dollar">200,00</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!--Terceira tabela-->
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th data-field="id" colspan="2">Receita Bruta Anual<br>Venda de Produtos Artesanais (Livre)</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td class="colunas">Venda de produtos artesanais com dispensa de emissão de documento fiscal</td>
+                            <td class="colunas"><span class="dollar">0,00</span></td>
+                        </tr>
+                        <tr>
+                            <td class="colunas">Venda de produtos artesanais com documento fiscal emitido</td>
+                            <td class="colunas"><span class="dollar">0,00</span></td>
+                        </tr>
+                        <tr>
+                            <td class="colunas">Total das Receitas com Venda de Produtos Artesanais</td>
+                            <td class="colunas"><span class="dollar">0,00</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </main>
         <footer>
             <div class="row">
